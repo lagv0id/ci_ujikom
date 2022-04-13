@@ -48,8 +48,6 @@
                 <h5 class="card-title">Admin Penerbit</h5>
                 <h6 class="card-subtitle mt-2 mb-2 text-muted">Add, edit dan delete untuk penerbit.</h6>
                 <hr>
-                <a href="<?php echo base_url('admin/add') ?>" class="btn btn-primary">Add Data</a>
-                <hr>
                 <table class="table">
                     <tr>
                         <th>ID Penerbit</th>

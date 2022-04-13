@@ -39,9 +39,22 @@ class Admin extends CI_Controller
         $this->load->view('admin/admin_editbuku', $data);
     }
 
+    public function editpenerbit($id)
+    {
+        $data['detail'] = $this->Penerbitmodel->get_detail($id);
+        $this->load->view('admin/admin_editpenerbit', $data);
+    }
+
     public function update($id)
     {
         if ($this->Bukumodel->update(($this->input->post()), $id)) {
+            redirect(base_url('admin'));
+        }
+    }
+
+    public function updatepenerbit($id)
+    {
+        if ($this->Penerbitmodel->update(($this->input->post()), $id)) {
             redirect(base_url('admin'));
         }
     }
