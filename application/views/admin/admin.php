@@ -3,7 +3,7 @@
 
 <div class="container mt-4">
     <div class="row">
-        <div class="card">
+        <div class="card pt-3">
 
             <?php if ($this->session->flashdata('pesan') != '') { ?>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">

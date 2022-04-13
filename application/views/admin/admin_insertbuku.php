@@ -3,7 +3,14 @@
 
 <div class="container mt-4">
     <div class="row">
-        <div class="card">
+        <div class="card pt-3">
+
+            <?php if ($this->session->flashdata('pesan') != '') { ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?php echo $this->session->flashdata('pesan'); ?>
+                </div>
+            <?php } ?>
+
             <div class="card-body">
                 <h5 class="card-title">Tambah data buku</h5>
                 <h6 class="card-subtitle mt-2 mb-2 text-muted">Tolong masukkan data dengan benar.</h6>
